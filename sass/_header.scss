@@ -1,0 +1,21 @@
+header {
+  transition: all 0.2s linear;
+
+  &:hover {
+    background-color: black;
+    color: $color-primary;
+  }
+  &:hover .main-nav__link,
+  .main-nav__logo {
+    color: $color-primary;
+  }
+
+  &:hover .main-nav__sign-up {
+    background-color: $color-primary;
+    color: black;
+  }
+  &:hover .main-nav__login{
+    background-color: black;
+    color: black;
+  }
+}
