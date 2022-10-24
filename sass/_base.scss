@@ -1,6 +1,6 @@
 // COLOR VARIABLES
-$color-primary: rgb(86, 128, 255);
-$color-primary-dark: #b28451;
+$color-blue-light: rgb(86, 128, 255);
+$color-blue-dark: rgb(1, 0, 39);
 
 $color-secondary: #101d2c;
 
@@ -46,13 +46,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  grid-template-columns:
-    [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
-    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
-    [center-end] minmax(6rem, 1fr)
-    [full-end];
-
+ 
+  grid-template-columns: repeat(24, minmax(0,1fr));
   @media only screen and (max-width: $bp-large) {
     grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
     grid-template-columns:
