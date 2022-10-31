@@ -1,17 +1,261 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 5 | @import "sidebar";
- *   |         ^^^^^^^^^
- *   '
- *   sass\main.scss 5:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502  @import \"sidebar\";\d\a   \2502          ^^^^^^^^^\a   \2575 \a   sass\\main.scss 5:9  root stylesheet";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: rgb(86, 128, 255);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(24, minmax(0, 1fr));
+}
+@media only screen and (max-width: 62.5em) {
+  .container {
+    grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  }
+}
+@media only screen and (max-width: 50em) {
+  .container {
+    grid-template-rows: 6rem calc(100vh - 6rem);
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.heading-4, .heading-3, .heading-2, .heading-1 {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.heading-1 {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.heading-2 {
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1;
+}
+.heading-3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.heading-4 {
+  font-size: 1.9rem;
+}
+.btn {
+  font-family: sans-serif;
+  padding: 1rem 1.6rem;
+  border-radius: 100px;
+  font-size: 1.6rem;
+  height: 3.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8rem;
+  text-decoration: none;
+}
+.mb-sm {
+  margin-bottom: 2rem;
+}
+
+.mb-md {
+  margin-bottom: 3rem;
+}
+
+.mb-big {
+  margin-bottom: 4rem;
+}
+
+.mb-large {
+  margin-bottom: 8rem;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 112px;
+  padding: 2rem 0;
+}
+.main-nav__logo {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 600;
+  gap: 0.8rem;
+}
+.main-nav__class-list {
+  display: flex;
+  align-items: center;
+}
+.main-nav__link:not(last-child) {
+  margin-right: 2rem;
+}
+.main-nav__link {
+  font-size: 1.6rem;
+  text-decoration: none;
+  position: relative;
+  color: black;
+  padding-bottom: 5px;
+}
+.main-nav__link:hover::after {
+  transform: scaleX(1);
+}
+.main-nav__link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom left;
+  transition: 0.25s ease-out;
+  transform: scaleX(0);
+  background-color: currentColor;
+}
+.main-nav__login {
+  background-color: transparent;
+  box-shadow: rgb(1, 0, 39) 0px 0px 0px 2px;
+  color: black;
+  font-weight: 600;
+  margin-right: 1.4rem;
+  margin-left: 1.4rem;
+}
+.main-nav__sign-up {
+  background-color: black;
+  border: black;
+  height: 3.9rem;
+  color: rgb(86, 128, 255);
+  font-weight: 600;
+}
+
+.logo-img {
+  height: 2.4rem;
+  width: 2.4rem;
+  transform: translateY(10%);
+}
+
+.underline::after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(1);
+  bottom: 0;
+  left: 0;
+}
+
+header {
+  transition: all 0.2s linear;
+}
+header:hover {
+  background-color: rgb(1, 0, 39);
+  color: rgb(86, 128, 255);
+}
+header:hover .main-nav__link, header:hover .main-nav__logo {
+  color: rgb(86, 128, 255);
+}
+header:hover .main-nav__sign-up {
+  background-color: rgb(86, 128, 255);
+  color: rgb(1, 0, 39);
+}
+header:hover .main-nav__login {
+  background-color: rgb(1, 0, 39);
+  color: rgb(86, 128, 255);
+  box-shadow: rgb(86, 128, 255) 0px 0px 0px 2px;
+  transition: all 0.2s linear;
+}
+header:hover .main-nav__login:hover {
+  background-color: rgb(86, 128, 255);
+  color: rgb(1, 0, 39);
+}
+
+.grid-parent {
+  display: grid;
+  margin-right: 112px;
+  margin-left: 112px;
+  grid-template-columns: repeat(24, minmax(0, 1fr));
+}
+
+.hero-heading {
+  grid-column: 11/24;
+}
+
+.squares {
+  grid-column: 1/11;
+}
+
+.blue-square-1 {
+  display: block;
+  background-color: rgb(56, 105, 255);
+  height: 28.9rem;
+  width: 28.9rem;
+  border-radius: 2rem;
+  margin-bottom: 3.2rem;
+}
+
+.blue-square-2 {
+  background-color: rgb(56, 105, 255);
+  height: 43.3rem;
+  width: 28.9rem;
+  border-radius: 2rem;
+}
+
+.lamps {
+  background-image: url("https://images.ctfassets.net/h67z7i6sbjau/6OQGlGHyq5Qc26X8lPyNYA/290b45638662be8c4705e205f29afb0b/Basics_hero-Pin-3_4_2x.jpg?fm=webp&q=85");
+  height: 38.9rem;
+  width: 28.9rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+  position: relative;
+  display: inline-block;
+  grid-column: 4/span 3;
+}
+.lamps-text {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  font-size: 2rem;
+  text-align: center;
+  min-height: 8.3rem;
+  padding: 2.4rem 1.5rem 2.6rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
