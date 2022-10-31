@@ -1,0 +1,61 @@
+.grid-parent {
+  display: grid;
+  margin-right: 112px;
+  margin-left: 112px;
+  grid-template-columns: repeat(24, minmax(0, 1fr));
+}
+
+.hero-heading {
+  grid-column: 11 / 24;
+}
+
+.squares {
+  grid-column: 1 / 11;
+}
+
+.blue-square-1 {
+  display: block;
+  background-color: rgb(56, 105, 255);
+  height: 28.9rem;
+  width: 28.9rem;
+  border-radius: 2rem;
+  margin-bottom: 3.2rem;
+}
+.blue-square-2 {
+  background-color: rgb(56, 105, 255);
+  height: 43.3rem;
+  width: 28.9rem;
+  border-radius: 2rem;
+}
+
+.lamps {
+  background-image: url("https://images.ctfassets.net/h67z7i6sbjau/6OQGlGHyq5Qc26X8lPyNYA/290b45638662be8c4705e205f29afb0b/Basics_hero-Pin-3_4_2x.jpg?fm=webp&q=85");
+  height: 38.9rem;
+  width: 28.9rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+  position: relative;
+  display: inline-block;
+  grid-column: 4 / span 3;
+
+  &-text {
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    font-size: 2rem;
+    text-align: center;
+    min-height: 8.3rem;
+    padding: 2.4rem 1.5rem 2.6rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
+}
