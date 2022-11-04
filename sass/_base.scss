@@ -44,16 +44,6 @@ body {
   background-color: rgb(86, 128, 255);
 }
 
-.container {
-  display: grid;
-
-  grid-template-columns: repeat(24, minmax(0, 1fr));
-  @media only screen and (max-width: $bp-large) {
-  }
-  @media only screen and (max-width: $bp-medium) {
-  }
-}
-
 li {
   list-style: none;
 }

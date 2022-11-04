@@ -16,16 +16,14 @@
   line-height: 1;
 
   &--light {
-
   }
   &--dark {
- 
   }
 }
 .heading-3 {
   @extend %heading;
   font-size: 1.6rem;
-  
+
   text-transform: uppercase;
 }
 .heading-4 {
@@ -33,24 +31,22 @@
   font-size: 1.9rem;
 
   &--light {
-  
   }
   &--dark {
-   
   }
 }
 
 .btn {
-font-family: $font-primary;
-padding: 1rem 1.6rem;
-border-radius: 100px;
-font-size: 1.6rem;
-height: 3.6rem;
-display: flex;
-align-items: center;
-justify-content: center;
-min-width: 8rem;
-text-decoration: none;
+  font-family: $font-primary;
+  padding: 1rem 1.6rem;
+  border-radius: 100px;
+  font-size: 1.6rem;
+  height: 3.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8rem;
+  text-decoration: none;
 
   &:hover {
   }
@@ -67,4 +63,25 @@ text-decoration: none;
 }
 .mb-large {
   margin-bottom: 8rem;
+}
+
+.ml-small {
+  margin-left: 2rem;
+}
+
+.padding-top-182 {
+  padding-top: 18.2rem;
+}
+
+.business-header {
+  font-size: 7.2rem;
+  font-weight: 500;
+  line-height: 110%;
+  margin-bottom: 2rem;
+  letter-spacing: 0.17rem;
+}
+
+.business-header-text {
+  font-size: 2.4rem;
+  line-height: 130%;
 }
