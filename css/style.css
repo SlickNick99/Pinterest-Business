@@ -23,22 +23,6 @@ body {
   background-color: rgb(86, 128, 255);
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(24, minmax(0, 1fr));
-}
-@media only screen and (max-width: 62.5em) {
-  .container {
-    grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
-    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  }
-}
-@media only screen and (max-width: 50em) {
-  .container {
-    grid-template-rows: 6rem calc(100vh - 6rem);
-  }
-}
-
 li {
   list-style: none;
 }
@@ -92,6 +76,27 @@ li {
 
 .mb-large {
   margin-bottom: 8rem;
+}
+
+.ml-small {
+  margin-left: 2rem;
+}
+
+.padding-top-182 {
+  padding-top: 18.2rem;
+}
+
+.business-header {
+  font-size: 7.2rem;
+  font-weight: 500;
+  line-height: 110%;
+  margin-bottom: 2rem;
+  letter-spacing: 0.17rem;
+}
+
+.business-header-text {
+  font-size: 2.4rem;
+  line-height: 130%;
 }
 
 .main-nav {
@@ -197,20 +202,21 @@ header:hover .main-nav__login:hover {
   color: rgb(1, 0, 39);
 }
 
-.grid-parent {
+
+.business-grid-parent {
+
   display: grid;
   margin-right: 112px;
   margin-left: 112px;
   grid-template-columns: repeat(24, minmax(0, 1fr));
+
+  position: relative;
 }
 
 .hero-heading {
   grid-column: 11/24;
 }
 
-.squares {
-  grid-column: 1/11;
-}
 
 .blue-square-1 {
   display: block;
@@ -239,16 +245,20 @@ header:hover .main-nav__login:hover {
   position: relative;
   display: inline-block;
   grid-column: 4/span 3;
+
+  margin-bottom: 2rem;
+
 }
 .lamps-text {
   background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+
   font-size: 2rem;
   text-align: center;
-  min-height: 8.3rem;
+  height: 9rem;
+
   padding: 2.4rem 1.5rem 2.6rem;
   position: absolute;
   bottom: 0;
@@ -256,6 +266,52 @@ header:hover .main-nav__login:hover {
   width: 100%;
   border-bottom-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
+}
+
+
+.business-grid-item--start-1-11 {
+  grid-column-start: 11;
+}
+.business-grid-item--start-3 {
+  grid-column-start: 3;
+}
+.business-grid-item--start-6 {
+  grid-column-start: 6;
+}
+.business-grid-item--span-12 {
+  grid-column-end: span 12;
+}
+
+.blue-squares-box {
+  position: absolute;
+  left: -19rem;
+  padding-top: 27rem;
+}
+
+.business-stat {
+  background-color: rgb(12, 59, 201);
+  padding: 5rem 3rem;
+  width: 28.9rem;
+  border-radius: 2rem;
+}
+
+.business-stat-number {
+  font-size: 5rem;
+  color: #fff;
+  letter-spacing: -0.2rem;
+}
+
+.business-stat-text {
+  width: 100%;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.center {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
