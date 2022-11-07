@@ -1,0 +1,44 @@
+.three-column-layout {
+  padding-left: 5.6rem;
+  padding-right: 5.6rem;
+}
+
+.three-column-header {
+  font-size: 6.4rem;
+  color: #2d55ff;
+  font-weight: 500;
+  line-height: 130%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 4rem;
+}
+
+.three-column-heading {
+  font-size: 2.6rem;
+  color: rgb(45, 85, 255);
+  line-height: 110%;
+  font-weight: 500;
+  padding-bottom: 2rem;
+  font-family: "DM Sans", sans-serif;
+
+  & + p {
+    font-size: 1.8rem;
+    color: rgb(45, 85, 255);
+  }
+}
+
+.three-column-icon {
+  height: 6.4rem;
+  width: 8.2rem;
+  color: rgb(45, 85, 255);
+  margin-bottom: 3rem;
+}
+
+.underline-p {
+  border-bottom: 2px solid;
+}
+
+.three-column-subheader {
+  font-size: 1.8rem;
+}
