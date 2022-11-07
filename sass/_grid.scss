@@ -1,6 +1,4 @@
-
 .business-grid-parent {
-
   display: grid;
   margin-right: 112px;
   margin-left: 112px;
@@ -12,13 +10,11 @@
   }
   @media only screen and (max-width: $bp-medium) {
   }
-
 }
 
 .hero-heading {
   grid-column: 11 / 24;
 }
-
 
 .blue-square-1 {
   display: block;
@@ -47,9 +43,7 @@
   display: inline-block;
   grid-column: 4 / span 3;
 
-
   margin-bottom: 2rem;
-
 
   &-text {
     background-color: #fff;
@@ -57,7 +51,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 
     font-size: 2rem;
     text-align: center;
@@ -73,7 +66,6 @@
   }
 }
 
-
 .business-grid-item {
   &--start-1-11 {
     grid-column-start: 11;
@@ -82,11 +74,35 @@
   &--start-3 {
     grid-column-start: 3;
   }
+  &--start-4 {
+    grid-column-start: 4;
+  }
   &--start-6 {
     grid-column-start: 6;
   }
+  &--start-12 {
+    grid-column-start: 12;
+  }
+  &--start-13 {
+    grid-column-start: 13;
+  }
+  &--start-14 {
+    grid-column-start: 14;
+  }
+  &--start-16 {
+    grid-column-start: 16;
+  }
+  &--span-6 {
+    grid-column-end: span 6;
+  }
+  &--span-8 {
+    grid-column-end: span 8;
+  }
   &--span-12 {
     grid-column-end: span 12;
+  }
+  &--span-10 {
+    grid-column-end: span 10;
   }
 }
 
@@ -115,10 +131,13 @@
   font-size: 1.8rem;
 }
 
-.center {
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-  justify-content: center;
+.flex-center {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
 }
 
+.center {
+  text-align: center;
+}

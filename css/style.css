@@ -17,14 +17,22 @@ html {
 }
 
 body {
-  font-family: sans-serif;
-  font-weight: 300;
+  font-family: "DM sans", sans-serif;
+  font-weight: 500;
   line-height: 1.6;
   background-color: rgb(86, 128, 255);
 }
 
 li {
   list-style: none;
+}
+
+.background-color-yellow {
+  background-color: rgb(237, 236, 185);
+}
+
+.background-color-green {
+  background-color: rgb(105, 219, 162);
 }
 
 .heading-4, .heading-3, .heading-2, .heading-1 {
@@ -51,7 +59,7 @@ li {
   font-size: 1.9rem;
 }
 .btn {
-  font-family: sans-serif;
+  font-family: "DM sans", sans-serif;
   padding: 1rem 1.6rem;
   border-radius: 100px;
   font-size: 1.6rem;
@@ -78,12 +86,32 @@ li {
   margin-bottom: 8rem;
 }
 
+.mt-150 {
+  margin-top: 15rem;
+}
+
 .ml-small {
   margin-left: 2rem;
 }
 
 .padding-top-182 {
   padding-top: 18.2rem;
+}
+
+.pt-150 {
+  padding-top: 15rem;
+}
+
+.pb-150 {
+  padding-bottom: 15rem;
+}
+
+.pl-56 {
+  padding-left: 5.6rem;
+}
+
+.pr-56 {
+  padding-right: 5.6rem;
 }
 
 .business-header {
@@ -202,21 +230,16 @@ header:hover .main-nav__login:hover {
   color: rgb(1, 0, 39);
 }
 
-
 .business-grid-parent {
-
   display: grid;
   margin-right: 112px;
   margin-left: 112px;
   grid-template-columns: repeat(24, minmax(0, 1fr));
-
   position: relative;
 }
-
 .hero-heading {
   grid-column: 11/24;
 }
-
 
 .blue-square-1 {
   display: block;
@@ -245,20 +268,16 @@ header:hover .main-nav__login:hover {
   position: relative;
   display: inline-block;
   grid-column: 4/span 3;
-
   margin-bottom: 2rem;
-
 }
 .lamps-text {
   background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-
   font-size: 2rem;
   text-align: center;
   height: 9rem;
-
   padding: 2.4rem 1.5rem 2.6rem;
   position: absolute;
   bottom: 0;
@@ -268,18 +287,41 @@ header:hover .main-nav__login:hover {
   border-bottom-left-radius: 2rem;
 }
 
-
 .business-grid-item--start-1-11 {
   grid-column-start: 11;
 }
 .business-grid-item--start-3 {
   grid-column-start: 3;
 }
+.business-grid-item--start-4 {
+  grid-column-start: 4;
+}
 .business-grid-item--start-6 {
   grid-column-start: 6;
 }
+.business-grid-item--start-12 {
+  grid-column-start: 12;
+}
+.business-grid-item--start-13 {
+  grid-column-start: 13;
+}
+.business-grid-item--start-14 {
+  grid-column-start: 14;
+}
+.business-grid-item--start-16 {
+  grid-column-start: 16;
+}
+.business-grid-item--span-6 {
+  grid-column-end: span 6;
+}
+.business-grid-item--span-8 {
+  grid-column-end: span 8;
+}
 .business-grid-item--span-12 {
   grid-column-end: span 12;
+}
+.business-grid-item--span-10 {
+  grid-column-end: span 10;
 }
 
 .blue-squares-box {
@@ -307,11 +349,98 @@ header:hover .main-nav__login:hover {
   font-size: 1.8rem;
 }
 
-.center {
+.flex-center {
   display: flex;
-  align-content: center;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.phone-box {
+  background-repeat: no-repeat;
+}
+.phone-box img {
+  max-width: 100%;
+  max-height: 64rem;
+}
+
+.business-accordian-header {
+  font-size: 6.4rem;
+  font-weight: 500;
+  color: rgb(45, 85, 255);
+  letter-spacing: -0.005em;
+  line-height: 115%;
+  margin-top: 3rem;
+  margin-bottom: 2.3rem;
+  padding-bottom: 2.6rem;
+}
+.business-accordian p {
+  padding-bottom: 2.4rem;
+}
+.business-accordian-text-box {
+  color: rgb(45, 85, 255);
+  font-size: 1.8rem;
+  border-bottom: 1px solid rgb(45, 85, 255);
+}
+.business-accordian h4 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 130%;
+  padding: 2.6rem 0;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.three-column-layout {
+  padding-left: 5.6rem;
+  padding-right: 5.6rem;
+}
+
+.three-column-header {
+  font-size: 6.4rem;
+  color: #2d55ff;
+  font-weight: 500;
+  line-height: 130%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 4rem;
+}
+
+.three-column-heading {
+  font-size: 2.6rem;
+  color: rgb(45, 85, 255);
+  line-height: 110%;
+  font-weight: 500;
+  padding-bottom: 2rem;
+  font-family: "DM Sans", sans-serif;
+}
+.three-column-heading + p {
+  font-size: 1.8rem;
+  color: rgb(45, 85, 255);
+}
+
+.three-column-icon {
+  height: 6.4rem;
+  width: 8.2rem;
+  color: rgb(45, 85, 255);
+  margin-bottom: 3rem;
+}
+
+.underline-p {
+  border-bottom: 2px solid;
+}
+
+.three-column-subheader {
+  font-size: 1.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

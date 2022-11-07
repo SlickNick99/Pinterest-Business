@@ -11,7 +11,7 @@ $color-grey-dark-1: #54483a;
 $color-grey-dark-2: #6d5d4b;
 
 // FONT VARIABLES
-$font-primary: sans-serif;
+$font-primary: "DM sans", sans-serif;
 $font-display: sans-serif;
 
 // RESPONSIVE BREAKPOINTS
@@ -39,11 +39,18 @@ html {
 
 body {
   font-family: $font-primary;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.6;
   background-color: rgb(86, 128, 255);
 }
 
 li {
   list-style: none;
+}
+
+.background-color-yellow {
+  background-color: rgb(237, 236, 185);
+}
+.background-color-green {
+  background-color: rgb(105, 219, 162);
 }
