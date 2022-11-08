@@ -1,0 +1,52 @@
+.background-color-light-blue {
+  background-color: rgb(198, 236, 235);
+}
+
+.support-header {
+  font-size: 6.4rem;
+  color: rgb(12, 88, 107);
+}
+
+.support-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(12, 88, 107);
+}
+.support-img {
+  width: 100%;
+  height: 100%;
+}
+
+.support-heading {
+  font-size: 2.6rem;
+  padding: 2rem 0;
+}
+
+.support-p {
+  font-size: 1.8rem;
+  margin-bottom: 3.4rem;
+}
+
+.support-btn {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+
+  padding: 0 2.4rem;
+  border-radius: 3rem;
+  box-shadow: rgb(12 88 107) 0px 0px 0px 2px;
+  background-color: transparent;
+  height: 6rem;
+  font-weight: 600;
+  border: none;
+  color: rgb(12, 88, 107);
+  transition: all 0.1s linear;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(12, 88, 107);
+    color: rgb(198, 236, 235);
+  }
+}
