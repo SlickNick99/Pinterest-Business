@@ -52,6 +52,10 @@
   }
 }
 
+.mb-xs {
+  margin-bottom: 0.8rem;
+}
+
 .mb-sm {
   margin-bottom: 2rem;
 }
@@ -67,11 +71,17 @@
 
 .mt-150 {
   margin-top: 15rem;
-
 }
 
 .ml-small {
   margin-left: 2rem;
+}
+.mr-small {
+  margin-right: 2rem;
+}
+
+.pt-88 {
+  padding-top: 8.8rem;
 }
 
 .padding-top-182 {
@@ -80,6 +90,10 @@
 
 .pt-150 {
   padding-top: 15rem;
+}
+
+.pb-88 {
+  padding-bottom: 8.8rem;
 }
 
 .pb-130 {
