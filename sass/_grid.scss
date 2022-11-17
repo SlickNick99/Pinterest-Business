@@ -3,7 +3,8 @@
   margin-right: 112px;
   margin-left: 112px;
   grid-template-columns: repeat(24, minmax(0, 1fr));
-
+  column-gap: 2rem;
+  max-width: 1696px;
   position: relative;
 
   @media only screen and (max-width: $bp-large) {
@@ -95,14 +96,14 @@
   &--start-16 {
     grid-column-start: 16;
   }
-  &--span-6 {
-    grid-column-end: span 6;
+  &--span-4 {
+    grid-column-end: span 4;
   }
   &--span-5 {
     grid-column-end: span 5;
   }
-  &--span-4 {
-    grid-column-end: span 4;
+  &--span-6 {
+    grid-column-end: span 6;
   }
   &--span-8 {
     grid-column-end: span 8;
