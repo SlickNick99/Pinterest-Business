@@ -254,6 +254,91 @@ header:hover .main-nav__login:hover {
   color: rgb(1, 0, 39);
 }
 
+.background-color-dark-blue {
+  background-color: rgb(45, 85, 255);
+}
+
+.footnotes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 112px;
+  min-height: 8rem;
+  color: currentColor;
+  font-size: 1.6rem;
+  position: relative;
+}
+.footnotes-addition {
+  height: 1.4rem;
+  width: 1.4rem;
+}
+.footnotes::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  z-index: 9999;
+  background-color: currentColor;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.color-v-light-blue {
+  color: rgb(225, 246, 215);
+}
+
+.language-box {
+  display: flex;
+  border: 1px solid rgb(225, 246, 215);
+  width: 25rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem;
+  margin-top: 15rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.language {
+  font-size: 1.6rem;
+  line-height: 1px;
+}
+
+.languages {
+  font-size: 2rem;
+  position: absolute;
+  top: -4rem;
+  left: 0;
+}
+
+.footer-da {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.footer-list li:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+.footer-list__header {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+.footer-list__item {
+  color: rgb(225, 246, 215);
+  text-decoration: none;
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+}
+.footer-list__item:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  margin-top: 3rem;
+}
+
 .business-grid-parent {
   display: grid;
   margin-right: 112px;
@@ -360,6 +445,9 @@ header:hover .main-nav__login:hover {
 }
 .business-grid-item--span-10 {
   grid-column-end: span 10;
+}
+.business-grid-item--span-24 {
+  grid-column-end: span 24;
 }
 
 .blue-squares-box {
